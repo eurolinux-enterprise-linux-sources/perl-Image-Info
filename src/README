@@ -1,0 +1,34 @@
+This Perl extention allows you to extract meta information from various
+types of image files. The following file formats are supported:
+
+   JPEG (plain JFIF and Exif)
+   PNG
+   GIF
+   PBM/PGM/PPM
+   SVG
+   XBM/XPM
+   BMP/DIB/RLE
+
+Usage is something like this:
+
+   use Image::Info qw(image_info);
+
+   @info = image_info("filename");
+   $refto_hash_describing_1st_image = $info[0];
+   $refto_hash_describing_2nd_image = $info[1];
+
+Copyright 1999-2004 Gisle Aas.
+
+Now maintained by Tels <nospam-abuse@bloodgate.com>
+
+Note that while the module is still maintained, no new features
+will be added.
+
+Especially the EXIF parsing code is buggy, not tested at all,
+and quite incomplete (a lot of manufacturer's MakerNotes and tags are
+not parsed at all). If you want a stable, feature-complete, up-to-date
+and tested EXIF parsing library, please use Image::ExifTool. 
+
+This library is free software; you can redistribute it and/or modify
+it under the same terms as Perl v5.8.8 itself.
+
