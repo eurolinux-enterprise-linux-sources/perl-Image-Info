@@ -1,6 +1,6 @@
 Name:           perl-Image-Info
 Version:        1.33
-Release:        3%{?dist}
+Release:        2%{?dist}
 Summary:        Image meta information extraction module for Perl
 Group:          Development/Libraries
 License:        GPL+ or Artistic
@@ -54,9 +54,6 @@ make test
 %{_mandir}/man3/*.3pm*
 
 %changelog
-* Fri Dec 27 2013 Daniel Mach <dmach@redhat.com> - 1.33-3
-- Mass rebuild 2013-12-27
-
 * Wed Jan 30 2013 Paul Howarth <paul@city-fan.org> - 1.33-2
 - Don't BR: perl(Image::TIFF); it's provided by this package
 
